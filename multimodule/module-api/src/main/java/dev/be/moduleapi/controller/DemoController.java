@@ -15,7 +15,6 @@ public class DemoController {
 
     @GetMapping("/save")
     public String save() {
-        System.out.println(CodeEnum.SUCCESS.getCode());
         return demoService.save();
     }
 
