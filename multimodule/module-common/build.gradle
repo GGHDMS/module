@@ -32,3 +32,12 @@ dependencies {
 tasks.named('test') {
     useJUnitPlatform()
 }
+
+tasks.bootJar { enabled = false }
+tasks.jar { enabled = true }
+
+// xxx.jar
+// xxx-plan.jar jar true 시
+// java -jar xxx.jar
+
+//./gradlew clean :module-api:buildNeeded --stacktrace --info --refresh-dependencies -x test // --info log level -x test 테스트는 확인하지 말고
